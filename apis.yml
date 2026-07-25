@@ -1,7 +1,16 @@
 aid: craon
 name: Craon
-description: Craon is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Craon (craon.ai) is an AI-native video editing platform where users edit through
+  natural-language chat instead of a traditional timeline. Creators describe their intent in plain
+  language — "make this more cinematic", "build tension before the reveal", "warm golden-hour grade" —
+  and Craon's AI performs the cuts, color grading, pacing, silence removal, scene detection, subtitle
+  generation, and emotional storytelling automatically. It targets content creators, YouTubers, social
+  and short-form creators, filmmakers, and marketing teams who want professional results without
+  timeline experience or color-theory skills, positioning itself as an AI-native alternative to CapCut,
+  Adobe Premiere Pro, DaVinci Resolve, iMovie, Filmora, Runway, and Descript. Craon is an early-stage
+  company surfaced as a portfolio company of 500 Global and added to the API Evangelist network. The
+  product is a consumer web application with no public developer API; its only machine-facing surface
+  today is a published /llms.txt for AI discovery.
 url: https://raw.githubusercontent.com/api-evangelist/craon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://craon.ai/opengraph-image
 tags:
 - Company
+- Video Editing
+- Artificial Intelligence
+- Video
+- Content Creation
+- Media
+- Creative Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/craon-domain-security.yml
+- type: LLMsTxt
+  url: llms/craon-llms.txt
 - type: Website
   url: https://craon.ai
+- type: SignUp
+  url: https://craon.ai/signup
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
